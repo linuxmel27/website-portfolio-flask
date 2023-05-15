@@ -18,6 +18,12 @@ cd website-portfolio-flask
 code .
 ```
 
+### Install Flask
+
+```bash
+pip install flask
+```
+
 ### Launching app
 
 Open terminal to execute python: `python app.py`.
