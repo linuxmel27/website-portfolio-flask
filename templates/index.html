@@ -2,56 +2,61 @@
 
 {% block content %}
 <div class="container my-5">
-    <h1>Mi portafolio</h1>
-    <p class="lead">Bienvenido a mi portafolio</p>
+    <h1>My portfolio</h1>
+    <p class="lead">Welcome to my portfolio</p>
 </div>
+
+  <section class="container py-4">
+    <h2>Descripción personal</h2>
+    <p class="lead">Soy un apasionado del desarrollo web y me especializo en HTML, CSS y JavaScript. Con más de X años de experiencia, he trabajado en proyectos desafiantes y me encanta aprender nuevas tecnologías. Estoy comprometido a crear experiencias web atractivas y funcionales para mis clientes.</p>
+  </section>
 
 <div class="container">
     <div class="row">
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image1.jpg') }}" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Proyecto 1</h5>
-                    <p class="card-text">Descripción del proyecto 1</p>
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Project description 1</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-success">Ver</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                            <button type="button" class="btn btn-sm btn-success">See</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
-                        <small class="text-muted">Fecha de publicación</small>
+                        <small class="text-muted">Publication date</small>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image2.jpg') }}" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Proyecto 2</h5>
-                    <p class="card-text">Descripción del proyecto 2</p>
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Project description 2</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">See</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
-                        <small class="text-muted">Fecha de publicación</small>
+                        <small class="text-muted">Publication date</small>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image3.jpg') }}" class="card-img-top custom-img" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Proyecto 3</h5>
-                    <p class="card-text">Descripción del proyecto 3</p>
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Project description 3</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">See</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
-                        <small class="text-muted">Fecha de publicación</small>
+                        <small class="text-muted">Publication date</small>
                     </div>
                 </div>
             </div>
