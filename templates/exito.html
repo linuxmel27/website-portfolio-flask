@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Éxito</title>
+    <!-- Incluye las hojas de estilo y los scripts de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Estilo personalizado para los contenedores -->
+    <style>
+        .container-color-1 {
+            background-color: #0b57bb;
+            /* Color de fondo rojo */
+            border: 2px solid #be0a1996;
+            /* Borde rojo */
+            border-radius: 10px;
+            /* Borde redondeado */
+            padding: 20px;
+            /* Espaciado interno */
+            color: white;
+        }
+
+        .container-color-2 {
+            background-color: #d4edda;
+            /* Color de fondo verde */
+            border: 2px solid #28a745;
+            /* Borde verde */
+            border-radius: 10px;
+            /* Borde redondeado */
+            padding: 20px;
+            /* Espaciado interno */
+        }
+
+        .container-color-3 {
+            background-color: #cce5ff;
+            /* Color de fondo azul */
+            border: 2px solid #007bff;
+            /* Borde azul */
+            border-radius: 10px;
+            /* Borde redondeado */
+            padding: 20px;
+            /* Espaciado interno */
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Datos Guardados con Éxito</h1>
+    <div class="container mt-5 container-color-1">
+        <h1 class="mb-4">Formulario enviado con éxito</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <p id="subject">{{ subject }}</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <p id="email">{{ email }}</p>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <p id="message">{{ message }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

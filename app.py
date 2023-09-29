@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import sqlite3
+# import sqlite3
 
 app = Flask(__name__)
 
@@ -17,20 +17,23 @@ def contact():
 
 @app.route("/guardar_datos", methods=["POST"])
 def guardar_datos():
-    campo1 = request.form["campo1"]
-    campo2 = request.form["campo2"]
+    # return "Se ha hecho una llamada a la función: guardar_datos"
+    subject = request.form["subject"]
+    email = request.form["email"]
+    message = request.form["message"]
 
+    # return "Subject: " + subject + " | Email: " + email + " | Message: " + message
     # Conexión a la base de datos SQLite
-    conn = sqlite3.connect("datos.db")
-    cursor = conn.cursor()
+    # conn = sqlite3.connect("datos.db")
+    # cursor = conn.cursor()
 
-    # Insertar datos en la base de datos
-    cursor.execute('INSERT INTO datos (campo1, campo2) VALUES (?, ?)', (campo1, campo2))
-    conn.commit()
+    # # Insertar datos en la base de datos
+    # cursor.execute('INSERT INTO datos (subject, email, message) VALUES (?, ?, ?)', (subject, email, message))
+    # conn.commit()
 
-    conn.close()
+    # conn.close()
 
-    return render_template("exito.html")
+    return render_template("exito.html", subject=subject, email=email, message=message)
 
 if __name__ == "__main__":
     app.run(debug=True)
