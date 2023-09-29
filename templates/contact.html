@@ -22,11 +22,28 @@
                         <label for="caja2">Email address:</label>
                         <input type="text" class="form-control" id="caja2" placeholder="Ingrese texto">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="obtenerDatos()">Enviar</button>
                 </form>
                 </div>
             </p>
         </div>
     </div>
 </div>
+
+<script>
+    function obtenerDatos() {
+        var caja1Valor = document.getElementById("caja1").value;
+        var caja2Valor = document.getElementById("caja2").value;
+
+        alert("El valor de la Caja 1 es: " + caja1Valor + "\nEl valor de la Caja 2 es: " + caja2Valor);
+    }
+
+    
+</script>
+
+
 {% endblock %}
